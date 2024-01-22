@@ -1,0 +1,26 @@
+Pokemon table component
+
+<div class="pokemon-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Types</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngIf="pokemons$ | async as pokemons">  
+        <tr *ngFor="let pokemon of pokemons">
+          <td>{{ pokemon.name }}</td>
+          <td>
+              <ng-container *ngFor="let type of pokemon.types">
+                <span>
+                  {{ type.type.name }} 
+                </span>
+              </ng-container> 
+          </td>
+        </tr>
+      </ng-container>      
+    </tbody>
+  </table>
+</div>

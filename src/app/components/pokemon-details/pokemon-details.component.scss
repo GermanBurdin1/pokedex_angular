@@ -1,0 +1,23 @@
+/* Стили для компонента деталей покемона */
+h2 {
+  color: #4a90e2;
+}
+
+/* Стили для списков типов и способностей */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #e3e3e3;
+  border-radius: 4px;
+}
+
+/* Стиль для айди и типов */
+div span {
+  font-weight: bold;
+}
