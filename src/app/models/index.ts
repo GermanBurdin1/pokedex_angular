@@ -9,6 +9,7 @@ export interface AllPokemons {
 }
 
 export interface Pokemon {
+    id: number;
     name: string;
     types: {
         slot: number;
@@ -26,11 +27,11 @@ export interface Pokemon {
         front_female: string | null;
         front_shiny: string | null;
         front_shiny_female: string | null;
-    }[]
+    }
 }
 
 export interface StatePokemons {
     nextUrl: string | null;
     previousUrl: string | null;
-    pokemons: Pokemon[];
+    pokemonsObj: Record<number, Pokemon>;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PokemonService } from '../../services/pokemon.service';
 import { Pokemon } from '../../models';
 import { Observable } from 'rxjs';
@@ -9,15 +9,11 @@ import { Observable } from 'rxjs';
   templateUrl: './pokemon-table.component.html',
   styleUrls: ['./pokemon-table.component.scss']
 })
-export class PokemonTableComponent implements OnInit {
+export class PokemonTableComponent {
   public pokemons$: Observable<Pokemon[]> = this._pokemonService.pokemons$;
 
   constructor(
     private readonly _pokemonService: PokemonService
   ) { }
-
-  ngOnInit(): void {
-    
-  }
 
 }
