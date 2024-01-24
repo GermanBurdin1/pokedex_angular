@@ -16,4 +16,10 @@ export class PokemonTableComponent {
     private readonly _pokemonService: PokemonService
   ) { }
 
+  public clickShowMore(): void {
+    const subs = this._pokemonService.getNextAll().subscribe(() => {
+      subs.unsubscribe();
+    });
+  }
+
 }

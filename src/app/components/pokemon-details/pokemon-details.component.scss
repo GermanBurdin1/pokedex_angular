@@ -1,23 +1,122 @@
-/* Стили для компонента деталей покемона */
+/* Стили для верхней части страницы с заголовком и ссылкой */
+.pokemon-details-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.pokemon-details-header h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin: 0;
+}
+
+/* Стиль для ссылки "All pokemons", помещенной в верхний левый угол */
+.back-link {
+  display: block;
+  top: 20px;
+  left: 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #4a90e2;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #25527b;
+}
+
+/* Стиль для выделения названия покемона */
+.pokemon__name {
+  font-size: 2em; /* Увеличенный размер шрифта для имени */
+  color: #4a90e2; /* Цвет, чтобы выделить имя */
+  font-weight: bold; /* Жирное начертание */
+  text-align: center; /* Центрирование текста */
+  margin: 10px 0; /* Отступы сверху и снизу */
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Пример выбора шрифта */
+  background-color: #f9f9f9; /* Светлый фон для контраста */
+}
+
+/* Стили для основного контейнера, чтобы поднять содержимое выше */
+
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Улучшенные стили для компонента деталей покемона */
 h2 {
   color: #4a90e2;
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 
 /* Стили для списков типов и способностей */
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
   display: inline-block;
-  margin-right: 10px;
-  padding: 5px 10px;
+  margin: 5px;
+  padding: 10px 15px;
   background-color: #e3e3e3;
-  border-radius: 4px;
+  border-radius: 20px; /* Округлые углы */
+  font-size: 1.5em;
+  color: #555; /* Темный текст для читаемости */
 }
 
 /* Стиль для айди и типов */
 div span {
   font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Стилизованные изображения с рамками и тенями */
+img {
+  width: 200px;
+  height: auto;
+  border: 3px solid #4a90e2; /* Синяя рамка */
+  border-radius: 10px; /* Округлость рамки */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Тень для эффекта всплывания */
+  margin: 10px;
+  background-color: white; /* Белый фон для контраста с изображением */
+}
+
+/* Стиль для ссылки "All pokemons" */
+a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Дополнительный стиль для улучшения визуального восприятия */
+.container > div {
+  margin: 10px 0;
+}
+
+/* Медиа запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+  img {
+    width: 150px;
+  }
+
+  h2, li {
+    font-size: 1em;
+  }
 }

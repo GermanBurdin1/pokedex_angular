@@ -1,0 +1,87 @@
+.pokemon-table-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Легкий фон для выделения заголовка */
+    border-bottom: 2px solid #e2e2e2; /* Граница для визуального отделения */
+  }
+  
+  .pokemon-table-header h1 {
+    font-size: 2.5em; /* Увеличенный размер шрифта для заголовка */
+    color: #333; /* Темный цвет текста для контраста */
+    margin: 0; /* Удаление стандартных отступов */
+  }
+  
+
+/* Сброс стилей для таблицы */
+.pokemon-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Стили для заголовков таблицы */
+  .pokemon-table th {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Стили для ячеек таблицы */
+  .pokemon-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Легкая граница между строками */
+  }
+  
+  /* Стили для ссылок внутри таблицы */
+  .pokemon-table a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  /* Эффект при наведении для ссылок */
+  .pokemon-table a:hover {
+    color: #25527b;
+  }
+  
+  /* Стили для типов покемонов */
+  .pokemon-table__type {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #e3e3e3;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+  }
+  
+  /* Эффект при наведении для типов */
+  .pokemon-table__type:hover {
+    background-color: #c2c2c2;
+  }
+  
+  /* Заголовок таблицы и ячейки */
+  .pokemon-table th, .pokemon-table td {
+    text-align: center;
+  }
+  
+  /* Добавление немного воздуха (отступов) вокруг таблицы */
+  .pokemon-table {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  /* Медиа запросы для адаптивного дизайна */
+  @media (max-width: 768px) {
+    .pokemon-table th, .pokemon-table td {
+      padding: 8px;
+    }
+  
+    .pokemon-table span {
+      padding: 3px 6px;
+      margin-right: 5px;
+    }
+  }
+  

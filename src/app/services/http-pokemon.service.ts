@@ -15,6 +15,10 @@ export class HttpPokemonService {
     return this._http.get<AllPokemons>(`${this._baseUrl}?limit=10&offset=0`);
   }
 
+  public getNextAll(url: string) {
+    return this._http.get<AllPokemons>(url);
+  }
+
   public getOne(url: string): Observable<Pokemon> {
     return this._http.get<Pokemon>(url);
   }

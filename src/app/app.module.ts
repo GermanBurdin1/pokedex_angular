@@ -11,6 +11,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { CommonModule } from "@angular/common";
 import { PokemonDetailsComponent } from "./components/pokemon-details/pokemon-details.component";
 import { PokemonTableComponent } from "./components/pokemon-table/pokemon-table.component";
+import { TuiButtonModule } from '@taiga-ui/core';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PokemonTableComponent } from "./components/pokemon-table/pokemon-table.
     TuiRootModule,
     TuiDialogModule,
     TuiAlertModule,
+    TuiButtonModule
 ],
   providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}],
   bootstrap: [AppComponent]

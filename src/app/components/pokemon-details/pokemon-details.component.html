@@ -1,8 +1,10 @@
-<div>
-  <a [routerLink]="'/pokemons'">← All pokemons</a>
+<div class="pokemon-details-header">
+  <h1>Pokemon Details Component</h1>
 </div>
 
-Pokemon details component
+<div class="back-link">
+  <a [routerLink]="'/pokemons'">← All pokemons</a>
+</div>
 
 <ng-container *ngIf="pokemon$ | async as pokemon; else loadedPokemon">
 
@@ -11,20 +13,20 @@ Pokemon details component
   <ng-template #pokemonTemplate>
     <ng-container *ngIf="pokemon.item !== null">
 
-      <div>{{ pokemon.item.name }}</div>
-      <div>
-        <span>Types: </span>
-        <ng-container *ngFor="let type of pokemon.item.types">
-          <span>
-            {{ type.type.name }} 
-          </span>
-        </ng-container> 
-      </div>
-      <div>
-        <!-- <img [src]="pokemon.sprites.back_default">
-        <img [src]="pokemon.sprites.back_shiny"> -->
-        <img [src]="pokemon.item.sprites.front_default">
-        <img [src]="pokemon.item.sprites.front_shiny">
+      <div class="pokemon">
+        <div class="pokemon__name">{{ pokemon.item.name }}</div>
+        <div>
+          <span>Types: </span>
+          <ng-container *ngFor="let type of pokemon.item.types">
+            <span>
+              {{ type.type.name }} 
+            </span>
+          </ng-container> 
+        </div>
+        <div>
+          <img [src]="pokemon.item.sprites.front_default">
+          <img [src]="pokemon.item.sprites.front_shiny">
+        </div>
       </div>
 
     </ng-container>
@@ -32,7 +34,6 @@ Pokemon details component
   </ng-template>
 
 </ng-container>
-
 
 <!-- <ng-template #loadedPokemon>
   <div>
