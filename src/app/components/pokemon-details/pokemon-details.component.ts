@@ -28,12 +28,6 @@ export class PokemonDetailsComponent {
       return this._pokemonService.getById(Number(id));
     }),
     map(pokemon => ({ item: pokemon }))
-    // tap(pokemon => {
-    //   if (pokemon === null) {
-    //     this._router.navigateByUrl('/pokemons');
-    //     return;
-    //   }
-    // })
   )
 
   constructor(

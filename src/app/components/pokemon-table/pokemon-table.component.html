@@ -12,7 +12,6 @@
     </thead>
     <tbody>
       <ng-container *ngIf="pokemons$ | async as pokemons">
-        <!-- подписка здесь pokemons$ | async -->
         <tr *ngFor="let pokemon of pokemons">
           <td>
             <a [routerLink]="'/pokemons/' + pokemon.id">
@@ -32,7 +31,7 @@
   </table>
 </div>
 
-<button
+<button class="btn-show-more"
   tuiButton
   size="m"
   (click)="clickShowMore()"
