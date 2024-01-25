@@ -20,9 +20,12 @@
           </td>
           <td>
               <ng-container *ngFor="let type of pokemon.types">
-                <span class="pokemon-table__type">
+                <button 
+                class="pokemon-table__type"
+                appearance="whiteblock-active"
+                tuiButton>
                   {{ type.type.name }} 
-                </span>
+                </button>
               </ng-container>
           </td>
         </tr>

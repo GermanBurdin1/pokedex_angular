@@ -18,7 +18,7 @@
 }
 
 .pokemon-table th {
-  background-color: #4a90e2;
+  background-color: #b8b0fc;
   color: white;
   padding: 10px;
   text-align: left;
@@ -43,14 +43,13 @@
   display: inline-block;
   margin-right: 10px;
   padding: 5px 10px;
-  background-color: #e3e3e3;
   border-radius: 4px;
   font-size: 0.9em;
   transition: background-color 0.3s;
 }
 
 .pokemon-table__type:hover {
-  background-color: #c2c2c2;
+  background-color: #b8b0fc;
 }
 
 .pokemon-table__types{
