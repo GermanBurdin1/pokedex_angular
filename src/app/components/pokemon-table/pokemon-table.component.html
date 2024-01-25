@@ -14,7 +14,7 @@
       <ng-container *ngIf="pokemons$ | async as pokemons">
         <tr *ngFor="let pokemon of pokemons">
           <td>
-            <a [routerLink]="'/pokemons/' + pokemon.id">
+            <a [routerLink]="'/pokemons/' + pokemon.id" class="pokemon-table__name">
               {{ pokemon.name }}
             </a>
           </td>
