@@ -5,8 +5,9 @@
     "ng": "ng",
     "start": "ng serve --open",
     "build": "ng build",
+    "build:github": "ng build --configuration github",
     "watch": "ng build --watch --configuration development",
-    "build:github": "ng build --prod --base-href '/ng-pokemon/'"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
